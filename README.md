@@ -2,13 +2,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
- <p> {
-    color: blue;
-  }
-</style>
 </head>
- <body>
-<p>Primeiro repositório no github</p>
+<body>
+<font color: blue;>Primeiro repositório no github</font>
 </body>
 </html>
