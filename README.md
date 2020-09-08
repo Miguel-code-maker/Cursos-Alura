@@ -1,3 +1,8 @@
 # Meus Projetos
-<p color="red">Primeiro repositório no github</p>
+<style>
+  p {
+    color: blue;
+  }
+</style>
+<p>Primeiro repositório no github</p>
 
