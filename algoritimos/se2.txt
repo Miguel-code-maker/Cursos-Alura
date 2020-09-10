@@ -1,0 +1,14 @@
+composto
+
+
+se ("condiçao") e ("outra condiçao") entao
+	[faça os comandos daqui isso]
+senao
+	se ("mais condiçao") ou ("mais um tipo de condiçao")
+		[faça os comandos nesse bloco]
+	senao
+		[faça isso daqui]
+	fimse
+fimse
+
+// infelizmente e isso my friend
