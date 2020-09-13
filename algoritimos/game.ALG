@@ -1,11 +1,11 @@
 Algoritmo "game"
 // 
 //  
-// Descrição   : Aqui você descreve o que o programa faz! (função)
+// DescriÃ§Ã£o   : Aqui vocÃª descreve o que o programa faz! (funÃ§Ã£o)
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 12/9/2020
 Var
-// Seção de Declarações das variáveis 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis 
    v: vetor[1..9] de caractere
    m: vetor[1..3,1..3] de caractere
    x, o, i, l, c, count, count1, count2, count3: inteiro
@@ -19,25 +19,25 @@ Var
            play <- 2
            table()
        senao
-           escreval("opçao invalida")
+           escreval("opÃ§ao invalida")
            escreval(" ")
            play <- 1
            table()
        fimse
    senao
-       se (position2 <> 365 ) e (position1 = 365 ) e (position2 <= 9) e (psition2 >= 1) entao
+       se (position2 <> 365 ) e (position1 = 365 ) e (position2 <= 9) entao
            se (v[position2] <> "O") e (v[position2] <> "X") entao
                v[position2] <- "O"
                play <- 1
                table()
            senao
-               escreval("opçao invalida")
+               escreval("opÃ§ao invalida")
                escreval(" ")
                play <- 2
                table()
            fimse
        senao
-           escreval("opçao invalida")
+           escreval("opÃ§ao invalida")
            escreval(" ")
            table()
        fimse
@@ -150,7 +150,7 @@ Var
    fimse
    fimprocedimento
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+// SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc... 
    v[1] <- "1"
    v[2] <- "2"
    v[3] <- "3"
@@ -165,12 +165,12 @@ Inicio
 
    repita
        se (play = 1) entao
-          escreva("Qual posiçao vc deseja marca o [X]: ")
+          escreva("Qual posiÃ§ao vc deseja marca o [X]: ")
           leia(x)
           game(x, 365)
           acabou("X")
        senao
-          escreva("Qual posiçao vc deseja marca o [O]: ")
+          escreva("Qual posiÃ§ao vc deseja marca o [O]: ")
           leia(o)
           game(365, o)
           acabou("O")
