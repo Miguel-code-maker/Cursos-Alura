@@ -1,0 +1,159 @@
+@charset "utf8";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    font: inherit
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #BBBBBB;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.res {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    font-size: 19px;
+}
+
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 150px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.produtos div {
+    text-align: center;
+    width: 17.8em;
+    margin: 1em 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+    list-style-type: none;
+}
+
+.produtos h2 {
+    font-size: 22px;
+}
+
+.produtos div:hover {
+    border-color: #C78C19;
+    cursor: pointer;
+}
+
+.produtos div:active {
+    border-color: #088C19;
+}
+
+.desc {
+    font-size: 18px;
+}
+
+.preco {
+    font-weight: bold;
+    font-size: 22px;
+    margin: 10px;
+}
+
+.produtos div:hover h2 {
+    font-size: 29px;
+}
+
+footer {
+    text-align: center;
+    background-image: url("../imagen/bg.jpg");
+    padding: 40px 0;
+}
+
+.cop {
+    color: white;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 940px) {
+    .produtos {
+        width: auto;
+        justify-content: center;
+    }
+    
+}
+
+
+@media (max-width: 560px) {
+    .res h1 {
+        text-align: center;
+    }
+    
+    nav li {
+		margin: 0px;
+        padding-left: 48px;
+	}
+
+	nav {
+		position: static;
+	}
+}
+
+
+@media screen and (max-width: 480px) {
+    .produtos, .res {
+        width: auto;
+    }
+    
+    .res h1 {
+        text-align: center;
+    }
+
+    nav li {
+		margin: 0;
+		padding-left: 0;
+	}
+
+	nav {
+		position: static;
+	}
+
+}
+

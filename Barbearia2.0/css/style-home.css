@@ -1,0 +1,547 @@
+@charset "utf8";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    font: inherit
+}
+
+body {
+    font-family: 'montserrat', sans-serif;
+}
+
+/*cabeçalho*/
+
+header {
+    background-color: #BBBBBB;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    font-size: 19px;
+}
+
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+/*css da pagina inicial*/
+.principal, .mapa, .res {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.banner {
+	width: 100%;
+	margin-bottom: 2em;
+	border-top: 10px solid black;
+	border-bottom: 10px solid black;
+}
+
+.titulo-centralizado {
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 1em;
+	clear: left;
+}
+
+/*/*colocar uma fomatação na primeira letra
+.titulo-centralizado:first-letter { 
+	font-weight: bold;
+}
+
+/*colocando algo no inicio do titulo
+.titulo-centralizado::before {
+	content: "[";
+}
+/*colocando no final do titulo
+.titulo-centralizado:after{
+	content: "]";
+}
+/*colocar uma fomataçãona primeira linha
+p:first-line {
+	font-weight: none;
+}
+*/
+.principal {
+	padding: 3em 0;
+	background-color: #FEFEFE ;
+}
+
+.principal p {
+	margin: 0 0 1em;
+}
+
+.utensilios {
+	width: 120px;
+	float: left;
+	margin: 0 20px 10px 0;
+}
+
+.principal strong {
+	font-weight: bold;
+}
+
+.principal em {
+	font-style: italic;
+}
+
+.local {
+    padding: 3em 0;    
+	/*podemos tambem  colocar no inicio do (45deg, black, white) deg que e o tanto de inclinação
+	ou onde esse degrade vai começar de cada cor com (black 0,  #888888 50%,  white 90%)*/
+	background: linear-gradient(#FEFEFE, #888888) 
+}
+
+.local p {
+	margin: 2em;
+	text-align: center;
+}
+
+.beneficios {
+    padding: 3em 0;
+	background-color: #888888
+}
+
+.conteudo-beneficios {
+	width: 640px;
+	margin: 0 auto;	
+}
+
+.lista-beneficios {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.itens {
+	line-height: 1.5;
+	list-style-type: none;
+}
+
+
+.itens:before {
+	content: "🟊";
+}
+/*podemos usar o :last-child ou o :nth-child(4) que pega o quarto iten ou :nth-child(2n) que ele pega so os parares*/
+.itens:first-child {
+	font-weight: bold;
+}
+
+.imagembeneficios {
+	width: 60%;
+	box-shadow: 10px 10px 10px 0 black;
+}
+
+.video {
+	width: 560px;
+	margin: 2em auto;
+}
+
+/*footer*/
+footer {
+    text-align: center;
+    background-image: url("../imagen/bg.jpg");
+    padding: 40px 0;
+}
+
+.cop {
+    color: white;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 480px) {
+	.principal, .beneficios, .conteudo-beneficios, .video, .mapa, .res {
+		width: auto;
+		padding: 10px;
+	}
+    
+    .res h1 {
+        text-align: center;
+    }
+
+	.lista-beneficios, .imagembeneficios {
+		width: 100%;
+        margin: 10px;
+        padding: 10px;
+	}
+
+
+	nav li {
+		margin: 0px;
+		padding-left: 0px;
+	}
+
+	nav {
+		position: static;
+	}
+
+}
+
+@media (max-width: 560px) {
+    .res h1 {
+        text-align: center;
+    }
+    
+    nav li {
+		margin: 0px;
+        padding-left: 48px;
+	}
+
+	nav {
+		position: static;
+	}
+}
+
+@media (max-width: 940px)  {
+    .mapa, .principal, .video {
+        width: auto;
+		padding: 10px;
+    }
+
+    .video {
+		display: flex;
+		justify-content: center;
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*aula de seletor de texto avançado*/
+/*
+
+
+Nesta aula, estudaremos os seletores avançados, uma forma específica de fazermos seleção de elementos de maneira mais rebuscada. Suponhamos que no interior da <main>, antes de se iniciar a <section>, nós tenhamos um <p> com um conteúdo qualquer. Se retornarmos para o nosso CSS,
+
+<main>
+            <p> qualquer conteudo</p>
+
+            <section class="principal">
+                <h2 class="titulo-principal">Sobre a Barbearia Alura</h2>
+
+                <img class="utensilios" src="utensilios.jpg" alt="Utensilios de um barbeiro." />
+
+                <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+
+                <p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+
+                <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+</section>
+
+No CSS, como fazemos para marcar esse parágrafo de vermelho? Podemos tentar escrever:
+
+main p {
+    background: red;
+}
+
+Ao carregarmos no navegador, veremos que todos os parágrafos estarão marcados de vermelho, pois coletamos os parágrafos que estavam dentro da <section>, afinal coletamos todos os parágrafos que estão dentro da <main>. Como podemos selecionar um parágrafo de maneira individual?
+
+Com os seletores avançados do CSS,podemos selecionar os filhos diretos de <main>, para tanto, utilizaremos o sinal >, e todo os outros parágrafos serão ignorados, afinal são filhos diretos da <section> e não de <main>.
+
+main > p {
+    background: red; 
+}
+
+Mas como selecionar o primeiro parágrafo que sucede uma imagem, por exemplo? Conseguimos selecionar o primeiro filho com o seletor que acabamos de conhecer, mas neste caso estamos falando do primeiro irmão que vem depois de um elemento.
+
+Neste caso, usamos img como elemento âncora e para o primeiro irmão usamos o sinal de "+"
+
+img + p { 
+    balckground: blue;
+
+Para selecionar todos os parágrafos localizados depois de uma imagem usamos o seletor ~
+
+img ~ p {
+    background: yellow
+} 
+
+É importante lembrar que um seletor pode sobrescrever o outro, pois todos possuem a mesma força. Os seletores avançados nos ajudam a criar estilos mais complexos e utilizar o CSS de uma maneira incrível, com uma autonomia maior do HTML.
+
+No CSS podemos, inclusive, excluir itens específicos. Se quisermos excluir todos os parágrafos que não compõe missao, escreveremos:
+
+.principal p:not(#misssao) {
+    background: orange;
+}
+
+A exclusão é um elemento poderoso no CSS, principalmente quando realizamos manutenção em algum código que já existe e que não demos modificar tanto o HTML.
+
+*/
+
+
+/*---------------------------------------------------------*/
+
+
+
+/*aula de css de calculo*/
+/*
+
+
+Nesta aula,aprenderemos como realizar cálculos dinâmicos de posicionamento de elementos no CSS, como altura e largura.
+
+Nosso site deve estar preparado para dispositivos com diversos tamanhos de tela. Um grande problema enfrentado ao desenvolver um site harmonioso é justamente calcular a proporção s dimensões dos elementos em diferentes dispositivos.
+
+Clicaremos sobre a imagem de utensílios de barbeiro com o botão direito do mouse, então selecionaremos a opção "Inspecionar" para acessarmos a ferramenta do desenvolvedor.
+
+Em nosso CSS, verificaremos que o tamanho da imagem é de 120px, mas como podemos fazer com que esse tamanho seja proporcional? Basta mudar para percentual, isto é, 20% de largura tendo a tela como referência.
+
+Para que a imagem sempre ocupe a medida correta em outros dispositivos, utilizamos a propriedade calc. O calculo que desejamos realizar é escrito entre parênteses, em que inserimos o primeiro valor, o tipo de operção e o resultado esperado.
+
+.utensilios {
+    width: calc(40% - 26px);
+    float: left;
+    Margin: 0 20px 20px 
+
+}
+
+Dessa forma, foi calculado precisamente 350px de largura para este elemento. É possível encadear quantas operações quisermos, no mesmo modelo de sintaxe.
+
+.utensilios {
+    width: calc(40% - (26px * 4);
+    float: left;
+    Margin: 0 20px 20px 
+
+}
+
+A propriedade calc nos dá o poder de fazer com o que cremos valores proporcionais específicos.
+
+*/
+
+
+
+/*----------------------------------------------------------------------------*/
+
+
+
+
+
+/*aula de sombras*/
+/*
+
+
+Nesta aula, aprenderemos sobre as sombras, uma outra novidade que CCS 3 inseriu. Fazer sombras em elementos sempre foi muito difícil nas versões anteriores, hoje em dia, trata-se de algo trivial.
+
+Continuaremos a usar a imagem da sessão de "Benefícios". A sombra é resultado de um efeito de "luz" que lançaremos sobre o elemento. O nome da propriedade que utilizaremos para gerar esse efeito é box-shadow, que possui a propriedade do eixo X, T e uma cor. Queremos deslocar 10px no eixo X e Y, a cor que utilizaremos será preto.
+
+.imagem-beneficios {
+    width: 60%
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px #000000;
+}
+
+Ao recarregarmos a página, teremos uma sombra projetada, quadrada.
+
+sombra
+
+Podemos melhorar a qualidade estética dessa sombra ao adicionarmos uma terceira propriedade chamada blur, em que podemos aplicar um nível de desfoque específico, no caso, inseriremos um valor de 5px. Quanto maior a quantidade de pixels que inserirmos, mais claro sera o efeito de desfoque.
+
+.imagem-beneficios {
+    width: 60%
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 5px #000000;
+}
+
+Ao recarregarmos a página, veremos o efeito aplicado na sombra da imagem.
+
+blur
+
+Temos ainda uma quarta propriedade que configura a intensidade da borda a partir do tamanho do elemento, isto é, o tamanho da sombra projetada. Neste caso, inseriremos 20px:
+
+.imagem-beneficios {
+    width: 60%
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 5px 20px #000000;
+
+}
+
+No navegador, a sombra sugirá expandida.
+
+sombragrande
+
+Podemos adicionar várias sombras em um mesmo elemento, basta que o conteúdo esteja separado por uma vírgula. Essa nova sombra terá valores negativos e terá a cor amarela.
+
+.imagem-beneficios {
+    width: 60%
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 5px 20px #00000, -10px -10px yellow;
+
+}
+
+Será projetada uma sombra por debaixo da anterior.
+
+Podemos, ainda, inserir uma terceira sombra com a cor rgba() com a camada de opacidade e borda vermelha.
+
+.imagem-beneficios {
+    width: 60%
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 5px 20px #00000, -10px -10px yellow, -20px 20px rgba(255,0,0,0.5);
+
+}
+
+Ao recarregarmos a página teremos três sombras.
+
+sombras
+
+Outra possibilidade no CSS 3 é criar sombras internas. Utilizaremos a própria sessão de benefícios para exempliciar esse efeito, que será utilizado em box-shadowe se chama inset. Seu posicionamento será a partir do centro do elemento e terá a cor vermelha.
+
+.beneficios {
+    padding: 3em 0;
+    background: #888888;
+    box-shadow: inset 0 0 #FF0000;
+}
+
+Ao carregarmos a página, não notaremos qualquer mudança. Isso se deve pelo fato de que a sombra possui o mesmo tamanho do elemento. Para que ela se torne perceptível, criaremos um espaçamento de 30px.
+
+.beneficios {
+    padding: 3em 0;
+    background: #888888;
+    box-shadow: inset 0 0 30px #FF0000;
+}
+
+Feito isso, a sombra será interna em toda a sessão de benefícios.
+
+sombra
+
+Apagaremos todas as sombras coloridas e manteremos apenas a sombra leve em imagem-beneficios.
+
+.imagem-beneficios {
+    width: 60%
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px 0 #000000;
+}
+
+Para fechar o tópico de sombras, por último aprenderemos a inserir sombras em textos. Em titulo-principal, utilizaremos a propriedade text-shadow, que recebem os valores que já conhecemos.
+
+.titulo-principal {
+    text-align: center;
+    font-size: em;
+    margin: 0 0 1em;
+    clear: left;
+    text-shadow: 2px 2px #FF0000; 
+}
+
+Será criada uma sombra para o título.
+
+texto vermelho
+
+
+*/
