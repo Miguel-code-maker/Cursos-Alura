@@ -1,0 +1,46 @@
+@charset "utf8";
+/*banner*/
+.banner {
+    position: relative;
+}
+
+/*img from banner*/
+.banner__img {
+    background: url('../img/banner.jpg') no-repeat center / cover;
+    height: calc(100vh - 75px);
+    width: 100%;
+}
+
+/*title from banner*/
+
+.banner__title {
+    color: #fdfdfd;
+    font-family: pacifico, cursive;
+    font-size: 5rem;
+    position: absolute;
+    text-align: center;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.75);
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+@media screen and (min-width: 0) {
+    .banner__title {
+        font-size: 3rem;
+    }
+
+    .banner__imagem {
+        height: calc(100vh - 51px);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .banner__tite {
+        font-size: 5.0625rem;
+    }
+
+    .banner__imagem {
+        height: calc(100vh - 72px);
+    }
+}

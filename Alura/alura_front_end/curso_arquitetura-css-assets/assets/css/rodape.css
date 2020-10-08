@@ -1,0 +1,9 @@
+@charset "utf8";
+
+.rodape {
+    background-color: #bfbfbf;
+    color: #fdfdfd;
+    text-align: right;
+    padding: 1.56rem 5rem;
+    text-transform: lowercase;
+}
