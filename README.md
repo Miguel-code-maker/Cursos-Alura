@@ -1,8 +1,4 @@
-# Meus Projetos
+# Alura Projetos
 </br>
-Primeiro repositório no Github.
-</br>
-Esse repositorio vai ser para fims pessoais!!
-</br>
-aqui vou salvar algums projetos em vez de compactar e colocar no pendrive ksksk.
+Aqui eu vou colocar meus projetos da alura realizados nos cursos.
 </br>
