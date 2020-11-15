@@ -19,14 +19,21 @@ export class ClienteController {
   }
 
 	importarClientes() {
-		this.service.get('http://localhost:4000/clientes')
-			.then(cl => {
-				const clientes = cl.filter(cliente =>
-					!this._listaClientes.clientes.some(clienteExistente => 
-						JSON.stringify(cliente) == JSON.stringify(clienteExistente)))
-					clientes.forEach(cliente => this._listaClientes.add(cliente))
-					this.showClientes()
-			}).catch(console.log)
+		 this.service
+ 			.get("http://localhost:4000/clientes")
+ 			.then((cl) =>
+   			cl.filter((cliente) =>
+     		!this._listaClientes.clientes.some((clienteExistente) =>
+       	JSON.stringify(cliente) == JSON.stringify(clienteExistente)
+     		)
+   		)
+ 		)
+ 		.then((clientes) => {
+   	clientes.forEach((cliente) => this._listaClientes.add(cliente));
+   	this.showClientes();
+	})
+ .catch(console.log);
+
 	}
 
   getValuesCliente(e) {
