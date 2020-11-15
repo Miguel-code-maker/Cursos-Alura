@@ -5,14 +5,21 @@ export class ListaClientes {
 
   add(cliente) {
     this._listaClientes.push(cliente);
-    console.log(this._listaClientes);
   }
 
-  remove() {
+  removeAll() {
     this._listaClientes = [];
   }
 
   get clientes() {
     return [].concat(this._listaClientes);
+  }
+
+  getForIdName(id) {
+    let name = '';
+    this.clientes.map(idExistente => {
+      if (idExistente.id == id) name = idExistente.nome;
+    })
+    return name;
   }
 }

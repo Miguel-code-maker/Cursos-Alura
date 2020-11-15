@@ -1,5 +1,6 @@
 export class Clientes {
-    constructor(nome, cpf) {
+    constructor(nome, cpf, id) {
+        this._id = id;
         this._nome = nome;
         this._cpf = cpf;
     }
@@ -9,6 +10,10 @@ export class Clientes {
     }
     
     get cpf() {
-        return this._cpf
+        return this._cpf;
+    }
+
+    get id() {
+        return this._id;
     }
 }
