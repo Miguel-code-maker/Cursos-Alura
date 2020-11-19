@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="33e862aa-872d-462e-a15a-9040bad23413" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/php-pdo-projeto-inicial/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/php-pdo-projeto-inicial/vendor/composer" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1kNsk7NSZLi9fUvMSGpcNCOmQ8N" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="PHP Script.studentsWithPhone.php">
+    <configuration name="conection.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/php-pdo-projeto-inicial/conection.php">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <method v="2" />
+    </configuration>
+    <configuration name="create-class-school.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/php-pdo-projeto-inicial/create-class-school.php">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <method v="2" />
+    </configuration>
+    <configuration name="list-students.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/php-pdo-projeto-inicial/list-students.php">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <method v="2" />
+    </configuration>
+    <configuration name="set-data-table.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/php-pdo-projeto-inicial/set-data-table.php">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <method v="2" />
+    </configuration>
+    <configuration name="studentsWithPhone.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/php-pdo-projeto-inicial/studentsWithPhone.php">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.studentsWithPhone.php" />
+        <item itemvalue="PHP Script.list-students.php" />
+        <item itemvalue="PHP Script.create-class-school.php" />
+        <item itemvalue="PHP Script.set-data-table.php" />
+        <item itemvalue="PHP Script.conection.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="33e862aa-872d-462e-a15a-9040bad23413" name="Default Changelist" comment="" />
+      <created>1605552523746</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605552523746</updated>
+      <workItem from="1605552524942" duration="8849000" />
+      <workItem from="1605621100559" duration="19293000" />
+      <workItem from="1605703417870" duration="7140000" />
+      <workItem from="1605711946978" duration="14288000" />
+      <workItem from="1605729445546" duration="881000" />
+      <workItem from="1605794440620" duration="347000" />
+      <workItem from="1605797663505" duration="63000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="488" y="278" width="377" height="238" key="#Composer" timestamp="1605552536602">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state x="488" y="278" width="377" height="238" key="#Composer/0.24.1360.744@0.24.1360.744" timestamp="1605552536602" />
+    <state x="0" y="24" width="1360" height="744" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605725978735">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state x="0" y="24" width="1360" height="744" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.24.1360.744@0.24.1360.744" timestamp="1605725978735" />
+    <state x="430" y="213" width="508" height="393" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605559218274">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state x="430" y="213" width="508" height="393" key="#com.intellij.fileTypes.FileTypeChooser/0.24.1360.744@0.24.1360.744" timestamp="1605559218274" />
+    <state x="486" y="80" width="381" height="634" key="#com.intellij.ide.util.MemberChooser" timestamp="1605725631160">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state x="486" y="80" width="381" height="634" key="#com.intellij.ide.util.MemberChooser/0.24.1360.744@0.24.1360.744" timestamp="1605725631160" />
+    <state x="413" y="146" width="528" height="501" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605720590518">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state x="413" y="146" width="528" height="501" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.24.1360.744@0.24.1360.744" timestamp="1605720590518" />
+    <state x="463" y="155" width="428" height="484" key="FileChooserDialogImpl" timestamp="1605797727767">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state x="463" y="155" width="428" height="484" key="FileChooserDialogImpl/0.24.1360.744@0.24.1360.744" timestamp="1605797727767" />
+    <state width="1314" height="189" key="GridCell.Tab.0.bottom" timestamp="1605728187191">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state width="1314" height="189" key="GridCell.Tab.0.bottom/0.24.1360.744@0.24.1360.744" timestamp="1605728187191" />
+    <state width="1314" height="189" key="GridCell.Tab.0.center" timestamp="1605728187189">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state width="1314" height="189" key="GridCell.Tab.0.center/0.24.1360.744@0.24.1360.744" timestamp="1605728187189" />
+    <state width="1314" height="189" key="GridCell.Tab.0.left" timestamp="1605728187189">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state width="1314" height="189" key="GridCell.Tab.0.left/0.24.1360.744@0.24.1360.744" timestamp="1605728187189" />
+    <state width="1314" height="189" key="GridCell.Tab.0.right" timestamp="1605728187190">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state width="1314" height="189" key="GridCell.Tab.0.right/0.24.1360.744@0.24.1360.744" timestamp="1605728187190" />
+    <state x="312" y="120" width="729" height="553" key="NewPhpClassDialog" timestamp="1605718591820">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state x="312" y="120" width="729" height="553" key="NewPhpClassDialog/0.24.1360.744@0.24.1360.744" timestamp="1605718591820" />
+    <state x="500" y="323" width="353" height="148" key="NewPhpFileDialog" timestamp="1605727953091">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state x="500" y="323" width="353" height="148" key="NewPhpFileDialog/0.24.1360.744@0.24.1360.744" timestamp="1605727953091" />
+    <state x="342" y="175" key="run.anything.popup" timestamp="1605623108175">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state x="342" y="175" key="run.anything.popup/0.24.1360.744@0.24.1360.744" timestamp="1605623108175" />
+    <state x="343" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1605718132731">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state x="343" y="89" width="672" height="678" key="search.everywhere.popup/0.24.1360.744@0.24.1360.744" timestamp="1605718132731" />
+  </component>
+</project>

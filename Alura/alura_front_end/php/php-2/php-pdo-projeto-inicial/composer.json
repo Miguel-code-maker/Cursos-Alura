@@ -1,0 +1,11 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Alura\\Pdo\\": "src/"
+        },
+        "classmap": ["src/Domain/Model"]
+    },
+    "require": {
+        "ext-pdo": "*"
+    }
+}

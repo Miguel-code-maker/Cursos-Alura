@@ -1,0 +1,26 @@
+{
+    "name": "Miguel-code-maker/buscador-cursos-alura",
+    "description": "Esse programa busca cursos da alura.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Miguel-code-maker",
+            "email": "Miguel.Siqueira.Reis@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.2",
+        "symfony/dom-crawler": "^5.1",
+        "symfony/css-selector": "^5.1"
+    },
+    "autoload": {
+        "classmap": ["src/Buscador.php"],
+        "files": ["buscar-cursos.php"],
+        "prs-4": {
+            "Alura\\BuscadorCursos\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.4"
+    }
+}

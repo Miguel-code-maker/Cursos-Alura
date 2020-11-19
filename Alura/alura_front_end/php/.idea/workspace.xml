@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="75452360-023a-419c-bec2-716ba387012a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="php-miguel" id="0f6bcca1-3b99-4189-8295-b8dc0d3e22a6" name="testeDePHP" port="8800" />
+    </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4" />
+  <component name="ProjectId" id="1jniefI0f2augE6YLR5qpBmWUZn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/php-2/class" />
+      <recent name="$PROJECT_DIR$/php-1" />
+      <recent name="$PROJECT_DIR$/php-orientacao/src/modelo/funcionarios" />
+      <recent name="$PROJECT_DIR$/php-orientacao/src/modelo" />
+      <recent name="$PROJECT_DIR$/php-orientacao/src/conta" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/conhecendomais-php" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="php" />
+      <command value="open php" />
+      <command value="php ola-mundo.php" />
+    </option>
+  </component>
+  <component name="RunManager" selected="PHP Script.buscar-aluno.php">
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <method v="2" />
+    </configuration>
+    <configuration name="banco.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" nameIsGenerated="true" path="$PROJECT_DIR$/php-1/orientacao-php/src/banco.php">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <method v="2" />
+    </configuration>
+    <configuration name="buscar-aluno.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/php-2/doctrine-php/comands/buscar-aluno.php">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <method v="2" />
+    </configuration>
+    <configuration name="crear-aluno.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/php-2/doctrine-php/comands/crear-aluno.php">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <method v="2" />
+    </configuration>
+    <configuration name="mb_string.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/php-1/introducao-php/mb_string.php">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <method v="2" />
+    </configuration>
+    <configuration name="teste.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/php-2/doctrine-php/teste.php">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" filter_connections="NOT_FILTER">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" browser="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" server_name="testeDePHP">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.php" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" browser="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" server_name="testeDePHP">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="PHP Script.banco.php" />
+      <item itemvalue="PHP Script.mb_string.php" />
+      <item itemvalue="PHP Web Page.index.php" />
+      <item itemvalue="PHP Script.teste.php" />
+      <item itemvalue="PHP Script.crear-aluno.php" />
+      <item itemvalue="PHP Script.buscar-aluno.php" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.buscar-aluno.php" />
+        <item itemvalue="PHP Script.crear-aluno.php" />
+        <item itemvalue="PHP Script.teste.php" />
+        <item itemvalue="PHP Script.mb_string.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="75452360-023a-419c-bec2-716ba387012a" name="Default Changelist" comment="" />
+      <created>1604446359042</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604446359042</updated>
+      <workItem from="1604446362350" duration="1686000" />
+      <workItem from="1604498199565" duration="21848000" />
+      <workItem from="1604587930664" duration="7742000" />
+      <workItem from="1604841158843" duration="7484000" />
+      <workItem from="1604852444981" duration="11277000" />
+      <workItem from="1604941168348" duration="4573000" />
+      <workItem from="1605015498523" duration="12714000" />
+      <workItem from="1605045939937" duration="4495000" />
+      <workItem from="1605111398843" duration="8092000" />
+      <workItem from="1605287235311" duration="12491000" />
+      <workItem from="1605797747555" duration="22389000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="367" y="42" width="828" height="684" key="#CLI_Interpreters" timestamp="1604448092683">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state x="367" y="42" width="828" height="684" key="#CLI_Interpreters/0.24.1360.744@0.24.1360.744" timestamp="1604448092683" />
+    <state x="385" y="75" width="736" height="637" key="#Inspections" timestamp="1605804237206">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state x="385" y="75" width="736" height="637" key="#Inspections/0.24.1360.744@0.24.1360.744" timestamp="1605804237206" />
+    <state x="377" y="32" width="600" height="729" key="#PHP" timestamp="1605287941437">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state x="377" y="32" width="600" height="729" key="#PHP/0.24.1360.744@0.24.1360.744" timestamp="1605287941437" />
+    <state x="287" y="32" width="828" height="684" key="#Servers" timestamp="1605289085043">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state x="287" y="32" width="828" height="684" key="#Servers/0.24.1360.744@0.24.1360.744" timestamp="1605289085043" />
+    <state x="0" y="24" width="1360" height="744" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605803729132">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state x="0" y="24" width="1360" height="744" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.24.1360.744@0.24.1360.744" timestamp="1605803729132" />
+    <state x="488" y="116" width="411" height="571" key="#com.intellij.ide.util.MemberChooser" timestamp="1605813805855">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state x="488" y="116" width="411" height="571" key="#com.intellij.ide.util.MemberChooser/0.24.1360.744@0.24.1360.744" timestamp="1605813805855" />
+    <state x="553" y="176" width="301" height="424" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605798249045">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state x="553" y="176" width="301" height="424" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.24.1360.744@0.24.1360.744" timestamp="1605798249045" />
+    <state x="475" y="161" width="428" height="484" key="FileChooserDialogImpl" timestamp="1605804027843">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state x="475" y="161" width="428" height="484" key="FileChooserDialogImpl/0.24.1360.744@0.24.1360.744" timestamp="1605804027843" />
+    <state width="899" height="176" key="GridCell.Tab.0.bottom" timestamp="1605823554987">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state width="899" height="176" key="GridCell.Tab.0.bottom/0.24.1360.744@0.24.1360.744" timestamp="1605823554987" />
+    <state width="899" height="176" key="GridCell.Tab.0.center" timestamp="1605823554986">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state width="899" height="176" key="GridCell.Tab.0.center/0.24.1360.744@0.24.1360.744" timestamp="1605823554986" />
+    <state width="899" height="176" key="GridCell.Tab.0.left" timestamp="1605823554985">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state width="899" height="176" key="GridCell.Tab.0.left/0.24.1360.744@0.24.1360.744" timestamp="1605823554985" />
+    <state width="899" height="176" key="GridCell.Tab.0.right" timestamp="1605823554987">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state width="899" height="176" key="GridCell.Tab.0.right/0.24.1360.744@0.24.1360.744" timestamp="1605823554987" />
+    <state x="256" y="114" width="638" height="553" key="NewPhpClassDialog" timestamp="1605812220586">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state x="256" y="114" width="638" height="553" key="NewPhpClassDialog/0.24.1360.744@0.24.1360.744" timestamp="1605812220586" />
+    <state x="500" y="323" width="353" height="148" key="NewPhpFileDialog" timestamp="1605815054957">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state x="500" y="323" width="353" height="148" key="NewPhpFileDialog/0.24.1360.744@0.24.1360.744" timestamp="1605815054957" />
+    <state x="184" y="32" key="SettingsEditor" timestamp="1604945526859">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state x="184" y="32" key="SettingsEditor/0.24.1360.744@0.24.1360.744" timestamp="1604945526859" />
+    <state x="0" y="24" width="774" height="744" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1604945403977">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state x="0" y="24" width="774" height="744" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.24.1360.744@0.24.1360.744" timestamp="1604945403977" />
+    <state x="100" y="124" width="1164" height="546" key="dock-window-1" timestamp="1604499738055">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state x="100" y="124" width="1164" height="546" key="dock-window-1/0.24.1360.744@0.24.1360.744" timestamp="1604499738055" />
+    <state x="86" y="159" width="1164" height="546" key="dock-window-2" timestamp="1604509279491">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state x="86" y="159" width="1164" height="546" key="dock-window-2/0.24.1360.744@0.24.1360.744" timestamp="1604509279491" />
+    <state x="375" y="160" width="1164" height="546" key="dock-window-3" timestamp="1604499738056">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state x="375" y="160" width="1164" height="546" key="dock-window-3/0.24.1360.744@0.24.1360.744" timestamp="1604499738056" />
+    <state x="335" y="107" width="1164" height="546" key="dock-window-4" timestamp="1604499738057">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state x="335" y="107" width="1164" height="546" key="dock-window-4/0.24.1360.744@0.24.1360.744" timestamp="1604499738057" />
+    <state x="263" y="55" width="828" height="684" key="editAsTableFormatDialogDimension" timestamp="1605804300880">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state x="263" y="55" width="828" height="684" key="editAsTableFormatDialogDimension/0.24.1360.744@0.24.1360.744" timestamp="1605804300880" />
+    <state x="0" y="24" width="587" height="744" key="find.popup" timestamp="1605049733745">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state x="0" y="24" width="587" height="744" key="find.popup/0.24.1360.744@0.24.1360.744" timestamp="1605049733745" />
+    <state width="600" height="428" key="javadoc.popup" timestamp="1604945415392">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state width="600" height="428" key="javadoc.popup/0.24.1360.744@0.24.1360.744" timestamp="1604945415392" />
+    <state x="459" y="171" width="436" height="452" key="refactoring.ChangeSignatureDialog" timestamp="1605808465467">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state x="459" y="171" width="436" height="452" key="refactoring.ChangeSignatureDialog/0.24.1360.744@0.24.1360.744" timestamp="1605808465467" />
+    <state x="342" y="175" width="672" height="677" key="run.anything.popup" timestamp="1605820949260">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state x="342" y="175" width="672" height="677" key="run.anything.popup/0.24.1360.744@0.24.1360.744" timestamp="1605820949260" />
+    <state x="343" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1605813069828">
+      <screen x="0" y="24" width="1360" height="744" />
+    </state>
+    <state x="343" y="89" width="672" height="678" key="search.everywhere.popup/0.24.1360.744@0.24.1360.744" timestamp="1605813069828" />
+  </component>
+</project>
