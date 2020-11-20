@@ -11,8 +11,8 @@ use Doctrine\DBAL\Schema\Schema;
  *
  * @internal
  *
- * @see Doctrine\Migrations\DbalMigrator
- * @see Doctrine\Migrations\Version\DbalExecutor
+ * @see Doctrine\Migrations\Migrator
+ * @see Doctrine\Migrations\Version\Executor
  */
 class MigratorConfiguration
 {

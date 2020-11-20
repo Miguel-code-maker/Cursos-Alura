@@ -2,18 +2,11 @@
 
 namespace Alura\Doctrine\Entity;
 
-require_once __DIR__.'/../../vendor/autoload.php';
-
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
-use Doctrine\ORM\Mapping\Column;
-use Doctrine\ORM\Mapping\Entity;
-use Doctrine\ORM\Mapping\GeneratedValue;
-use Doctrine\ORM\Mapping\Id;
-use Doctrine\ORM\Mapping\OneToMany;
 
 /**
- * @Entity
+ * @Entity(repositoryClass="Alura\Doctrine\Repository\AlunoRepository")
  */
 class Aluno
 {
@@ -22,19 +15,24 @@ class Aluno
      * @GeneratedValue
      * @Column(type="integer")
      */
-    private int $id;
+    private $id;
     /**
      * @Column(type="string")
      */
-    private string $nome;
+    private $nome;
     /**
-     * @OneToMany(targetEntity="Telefone", mappedBy="aluno", cascade={"remove", "persist"})
+     * @OneToMany(targetEntity="Telefone", mappedBy="aluno", cascade={"remove", "persist"}, fetch="EAGER")
      */
     private $telefones;
+    /**
+     * @ManyToMany(targetEntity="Curso", mappedBy="alunos")
+     */
+    private $cursos;
 
     public function __construct()
     {
         $this->telefones = new ArrayCollection();
+        $this->cursos = new ArrayCollection();
     }
 
     public function getId(): int
@@ -64,5 +62,20 @@ class Aluno
     public function getTelefones(): Collection
     {
         return $this->telefones;
+    }
+
+    public function getCursos(): Collection
+    {
+        return $this->cursos;
+    }
+
+    public function addCursos(Curso $curso): self
+    {
+        if ($this->cursos->contains($curso)) {
+            return $this;
+        }
+        $this->cursos->add($curso);
+        $curso->addAluno($this);
+        return $this;
     }
 }

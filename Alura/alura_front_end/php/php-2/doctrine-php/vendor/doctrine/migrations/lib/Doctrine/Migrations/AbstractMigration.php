@@ -13,8 +13,7 @@ use Doctrine\Migrations\Exception\AbortMigration;
 use Doctrine\Migrations\Exception\IrreversibleMigration;
 use Doctrine\Migrations\Exception\MigrationException;
 use Doctrine\Migrations\Exception\SkipMigration;
-use Doctrine\Migrations\Query\Query;
-use Psr\Log\LoggerInterface;
+use Doctrine\Migrations\Version\Version;
 use function sprintf;
 
 /**
@@ -23,6 +22,9 @@ use function sprintf;
  */
 abstract class AbstractMigration
 {
+    /** @var Version */
+    protected $version;
+
     /** @var Connection */
     protected $connection;
 
@@ -32,18 +34,18 @@ abstract class AbstractMigration
     /** @var AbstractPlatform */
     protected $platform;
 
-    /** @var LoggerInterface */
-    private $logger;
+    /** @var OutputWriter */
+    private $outputWriter;
 
-    /** @var Query[] */
-    private $plannedSql = [];
-
-    public function __construct(Connection $connection, LoggerInterface $logger)
+    public function __construct(Version $version)
     {
-        $this->connection = $connection;
-        $this->sm         = $this->connection->getSchemaManager();
-        $this->platform   = $this->connection->getDatabasePlatform();
-        $this->logger     = $logger;
+        $config = $version->getConfiguration();
+
+        $this->version      = $version;
+        $this->connection   = $config->getConnection();
+        $this->sm           = $this->connection->getSchemaManager();
+        $this->platform     = $this->connection->getDatabasePlatform();
+        $this->outputWriter = $config->getOutputWriter();
     }
 
     /**
@@ -65,32 +67,38 @@ abstract class AbstractMigration
         return '';
     }
 
-    public function warnIf(bool $condition, string $message = 'Unknown Reason') : void
+    public function warnIf(bool $condition, string $message = '') : void
     {
         if (! $condition) {
             return;
         }
 
-        $this->logger->warning($message, ['migration' => $this]);
+        $message = $message ?: 'Unknown Reason';
+
+        $this->outputWriter->write(sprintf(
+            '    <comment>Warning during %s: %s</comment>',
+            $this->version->getExecutionState(),
+            $message
+        ));
     }
 
     /**
      * @throws AbortMigration
      */
-    public function abortIf(bool $condition, string $message = 'Unknown Reason') : void
+    public function abortIf(bool $condition, string $message = '') : void
     {
         if ($condition) {
-            throw new AbortMigration($message);
+            throw new AbortMigration($message ?: 'Unknown Reason');
         }
     }
 
     /**
      * @throws SkipMigration
      */
-    public function skipIf(bool $condition, string $message = 'Unknown Reason') : void
+    public function skipIf(bool $condition, string $message = '') : void
     {
         if ($condition) {
-            throw new SkipMigration($message);
+            throw new SkipMigration($message ?: 'Unknown Reason');
         }
     }
 
@@ -130,10 +138,7 @@ abstract class AbstractMigration
     /**
      * @throws MigrationException|DBALException
      */
-    public function down(Schema $schema) : void
-    {
-        $this->abortIf(true, sprintf('No down() migration implemented for "%s"', static::class));
-    }
+    abstract public function down(Schema $schema) : void;
 
     /**
      * @param mixed[] $params
@@ -144,20 +149,12 @@ abstract class AbstractMigration
         array $params = [],
         array $types = []
     ) : void {
-        $this->plannedSql[] = new Query($sql, $params, $types);
-    }
-
-    /**
-     * @return Query[]
-     */
-    public function getSql() : array
-    {
-        return $this->plannedSql;
+        $this->version->addSql($sql, $params, $types);
     }
 
     protected function write(string $message) : void
     {
-        $this->logger->notice($message, ['migration' => $this]);
+        $this->outputWriter->write($message);
     }
 
     /**

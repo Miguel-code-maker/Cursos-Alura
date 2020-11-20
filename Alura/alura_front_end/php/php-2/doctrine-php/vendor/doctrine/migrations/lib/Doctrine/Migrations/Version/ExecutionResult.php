@@ -4,9 +4,7 @@ declare(strict_types=1);
 
 namespace Doctrine\Migrations\Version;
 
-use DateTimeImmutable;
 use Doctrine\DBAL\Schema\Schema;
-use Doctrine\Migrations\Query\Query;
 use RuntimeException;
 use Throwable;
 use function count;
@@ -16,16 +14,18 @@ use function count;
  *
  * @internal
  */
-final class ExecutionResult
+class ExecutionResult
 {
-    /** @var Query[] */
+    /** @var string[] */
     private $sql = [];
 
-    /**
-     * Seconds
-     *
-     * @var float|null
-     */
+    /** @var mixed[] */
+    private $params = [];
+
+    /** @var mixed[] */
+    private $types = [];
+
+    /** @var float|null */
     private $time;
 
     /** @var float|null */
@@ -40,46 +40,19 @@ final class ExecutionResult
     /** @var Throwable|null */
     private $exception;
 
-    /** @var DateTimeImmutable|null */
-    private $executedAt;
-
-    /** @var int */
-    private $state;
-
     /** @var Schema|null */
     private $toSchema;
 
-    /** @var Version */
-    private $version;
-
-    /** @var string */
-    private $direction;
-
-    public function __construct(Version $version, string $direction = Direction::UP, ?DateTimeImmutable $executedAt = null)
+    /**
+     * @param string[] $sql
+     * @param mixed[]  $params
+     * @param mixed[]  $types
+     */
+    public function __construct(array $sql = [], array $params = [], array $types = [])
     {
-        $this->executedAt = $executedAt;
-        $this->version    = $version;
-        $this->direction  = $direction;
-    }
-
-    public function getDirection() : string
-    {
-        return $this->direction;
-    }
-
-    public function getExecutedAt() : ?DateTimeImmutable
-    {
-        return $this->executedAt;
-    }
-
-    public function setExecutedAt(DateTimeImmutable $executedAt) : void
-    {
-        $this->executedAt = $executedAt;
-    }
-
-    public function getVersion() : Version
-    {
-        return $this->version;
+        $this->sql    = $sql;
+        $this->params = $params;
+        $this->types  = $types;
     }
 
     public function hasSql() : bool
@@ -88,7 +61,7 @@ final class ExecutionResult
     }
 
     /**
-     * @return Query[]
+     * @return string[]
      */
     public function getSql() : array
     {
@@ -96,11 +69,43 @@ final class ExecutionResult
     }
 
     /**
-     * @param Query[] $sql
+     * @param string[] $sql
      */
     public function setSql(array $sql) : void
     {
         $this->sql = $sql;
+    }
+
+    /**
+     * @return mixed[]
+     */
+    public function getParams() : array
+    {
+        return $this->params;
+    }
+
+    /**
+     * @param mixed[] $params
+     */
+    public function setParams(array $params) : void
+    {
+        $this->params = $params;
+    }
+
+    /**
+     * @return mixed[]
+     */
+    public function getTypes() : array
+    {
+        return $this->types;
+    }
+
+    /**
+     * @param mixed[] $types
+     */
+    public function setTypes(array $types) : void
+    {
+        $this->types = $types;
     }
 
     public function getTime() : ?float
@@ -133,15 +138,19 @@ final class ExecutionResult
         return $this->skipped;
     }
 
-    public function setError(bool $error, ?Throwable $exception = null) : void
+    public function setError(bool $error) : void
     {
-        $this->error     = $error;
-        $this->exception = $exception;
+        $this->error = $error;
     }
 
     public function hasError() : bool
     {
         return $this->error;
+    }
+
+    public function setException(Throwable $exception) : void
+    {
+        $this->exception = $exception;
     }
 
     public function getException() : ?Throwable
@@ -161,15 +170,5 @@ final class ExecutionResult
         }
 
         return $this->toSchema;
-    }
-
-    public function getState() : int
-    {
-        return $this->state;
-    }
-
-    public function setState(int $state) : void
-    {
-        $this->state = $state;
     }
 }

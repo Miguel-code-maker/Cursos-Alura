@@ -2,15 +2,6 @@
 
 namespace Alura\Doctrine\Entity;
 
-require_once __DIR__.'/../../vendor/autoload.php';
-
-
-use Doctrine\ORM\Mapping\Column;
-use Doctrine\ORM\Mapping\Entity;
-use Doctrine\ORM\Mapping\GeneratedValue;
-use Doctrine\ORM\Mapping\Id;
-use Doctrine\ORM\Mapping\ManyToOne;
-
 /**
  * @Entity
  */
@@ -21,11 +12,11 @@ class Telefone
      * @GeneratedValue
      * @Column(type="integer")
      */
-    private int $id;
+    private $id;
     /**
      * @Column(type="string")
      */
-    private string $numero;
+    private $numero;
     /**
      * @ManyToOne(targetEntity="Aluno")
      */

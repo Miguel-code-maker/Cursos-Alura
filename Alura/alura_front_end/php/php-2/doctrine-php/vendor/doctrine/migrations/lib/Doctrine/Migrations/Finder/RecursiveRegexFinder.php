@@ -8,26 +8,14 @@ use FilesystemIterator;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use RegexIterator;
-use function sprintf;
 use const DIRECTORY_SEPARATOR;
+use function sprintf;
 
 /**
  * The RecursiveRegexFinder class recursively searches the given directory for migrations.
  */
-final class RecursiveRegexFinder extends Finder
+final class RecursiveRegexFinder extends Finder implements MigrationDeepFinder
 {
-    /** @var string */
-    private $pattern;
-
-    public function __construct(?string $pattern = null)
-    {
-        $this->pattern = $pattern ?? sprintf(
-            '#^.+\\%s[^\\%s]+\\.php$#i',
-            DIRECTORY_SEPARATOR,
-            DIRECTORY_SEPARATOR
-        );
-    }
-
     /**
      * @return string[]
      */
@@ -55,7 +43,11 @@ final class RecursiveRegexFinder extends Finder
 
     private function getPattern() : string
     {
-        return $this->pattern;
+        return sprintf(
+            '#^.+\\%sVersion[^\\%s]{1,255}\\.php$#i',
+            DIRECTORY_SEPARATOR,
+            DIRECTORY_SEPARATOR
+        );
     }
 
     /**
