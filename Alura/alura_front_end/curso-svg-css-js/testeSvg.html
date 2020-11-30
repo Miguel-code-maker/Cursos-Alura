@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<heade>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>Svg -teste</title>
+    <style>
+        svg {
+            padding: 10px;
+        }
+    </style>
+</heade>
+<body>
+    <!-- circulo -->
+    <svg widht="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="3" 
+        fill="yellow" />
+    </svg>
+    </br>
+
+    <!-- qudrado ou retangulo -->
+    <svg width="100" height="100">
+        <rect width="100" height="100" fill="blue"></rect>
+    </svg>
+    </br>
+    
+    <!-- ellipse -->
+    <svg widht="200" height="100">
+        <ellipse cx="60" cy="50" rx="60" ry="50" fill="pink"></ellipse>
+    </svg>
+    </br>
+
+    <!-- linha -->
+    <svg width="100" height="100">
+        <line x1="0" y1="100" x2="100" y2="0" stroke="red" stroke-whidht="3" fill="red"></line>
+    </svg>
+    </br>
+
+    <!-- poligano -->
+    <svg width="160" height="100">
+        <polygon points=" 85,0 0,100 160,50" fill="orange"></polygon>
+    </svg>
+    </br>
+    <!-- poli linha -->
+    <svg width="200" height="200">
+        <polyline points="0,100 100,100 100,0 200,0, 200,200, 0,200 0,0 20,20 60,20 80,50 100,100" stroke="black" stroke-width="4" fill="none"></polyline>
+    </svg>
+    </br>
+
+    <!-- path -->
+    <svg widht="200" height="200">
+        <path d=" M100 0 L0 200 L200 200 Z"></path>
+    </svg>
+    </br>
+
+    <!-- bandeira do brasil -->
+    <svg width="400" height="300">
+        <defs>
+            <style>
+                .rect {
+                    fill: green;
+                }
+                .circle {
+                    fill: blue;
+                }
+                .polygon {
+                    fill: yellow;
+                }
+            </style>
+        </defs>
+        <g class="rect">
+            <rect width="350" height="250"></rect>
+        </g>
+        <g class="polygon">
+            <polygon points="35, 125 175, 38 175, 210"></polygon>
+            <polygon points="315, 125 175, 38 175, 210"></polygon>
+        </g>
+        <g class="circle">
+            <circle cx="175" cy="125" r="60" />
+        </g>
+    </svg>
+    
+</body>
+</html>
+
+
+<!-- 
+M = move até
+L = linha até
+H = linha horizontal até
+V = linha vertical até
+C = curva até
+S = curva suave até
+Q = curva de Bézier
+T = curva de Bézier suave
+A = arco elíptico
+Z = fecha path  -->
