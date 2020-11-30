@@ -6,7 +6,6 @@ body {
     background-color: #FFEAD4;
     overflow-x: hidden;
     font-family: 'Lato', sans-serif;
-    height: 300vh;
 }
 
 h1,h2 {
@@ -95,6 +94,29 @@ p {
     to {
         transform: scale(0.95);
     }
+}
+
+
+.container-footer {
+    position: relative;
+    margin-top: 15rem;
+}
+
+.lett__footer {
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    position: absolute;
+    top: 30%;
+    fill: white;
+    opacity: 0.8;
+
+}
+
+.creditos {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: rgba(250, 248, 107, 0.497);
 }
 
 
