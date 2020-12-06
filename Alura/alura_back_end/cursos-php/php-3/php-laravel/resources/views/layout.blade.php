@@ -20,5 +20,7 @@
         </div>
         @yield('content')
     </div>
+
+    @yield('javaScript')
 </body>
 </html>

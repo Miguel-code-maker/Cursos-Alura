@@ -1,8 +1,11 @@
 <?php
 namespace App\Http\Controllers;
 
+use App\Episodio;
 use App\Http\Requests\SeriesFormRequest;
 use App\Serie;
+use App\Services\TableWithTemp;
+use App\Temporada;
 use Illuminate\Http\Request;
 
 class SeriesControllers extends Controller {
@@ -19,28 +22,42 @@ class SeriesControllers extends Controller {
         return view('series.create');
     }
 
-    public function store(SeriesFormRequest $request)
+    public function store(SeriesFormRequest $request, TableWithTemp $tableWithTemp)
     {
         $nome = $request->nome;
-        $series = Serie::create([
-            'nome' => $nome
-        ]);
+        $temp = filter_var($request->temporadas, FILTER_SANITIZE_NUMBER_INT);
+        $eps = filter_var($request->episodios, FILTER_SANITIZE_NUMBER_INT);
+
+        $serie = $tableWithTemp->create($nome, $temp, $eps, Serie::class);
 
         $request->session()->flash('mensagem', "$nome adicionada com sucesso.");
 
         return redirect()->route('get_series');
     }
 
-    public function destroy(Request $request)
+    public function destroy(Request $request, TableWithTemp $tableWithTemp)
     {
         $id = filter_var($request->id, FILTER_SANITIZE_NUMBER_INT);
 
         $serie = Serie::query()->where('id', $id)->first();
 
+        //$tableWithTemp->delete(Serie::class, $id);
         Serie::destroy($id);
+
         $request->session()->flash('mensagem', "{$serie->nome} foi deletada com sucesso.");
 
         return redirect()->route('get_series');
+
+    }
+
+    public function updateName(Request $request, int $serieId)
+    {
+        $newName = $request->nome;
+
+        $serie = Serie::find($serieId);
+
+        $serie->nome = $newName;
+        $serie->save();
 
     }
 }
