@@ -1,15 +1,16 @@
 <?php
 namespace App\Http\Controllers;
 
-use App\Episodio;
 use App\Http\Requests\SeriesFormRequest;
 use App\Serie;
 use App\Services\TableWithTemp;
-use App\Temporada;
 use Illuminate\Http\Request;
 
 class SeriesControllers extends Controller {
+
+
     public function index(Request $request) {
+
         $series = Serie::query()->orderBy('nome')->get();
 
         $mensagem = $request->session()->get('mensagem');
@@ -60,4 +61,6 @@ class SeriesControllers extends Controller {
         $serie->save();
 
     }
+
+
 }

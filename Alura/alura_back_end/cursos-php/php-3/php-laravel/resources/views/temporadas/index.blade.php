@@ -67,8 +67,10 @@
                     <p style="display: none">{{ $i++ }}</p>
                 <li id="ep-{{$i}}" class="d-flex justify-content-between p-2 item-ep">
                     Episodio {{$i}}
+                    @auth()
                     <input onclick="checkData(this, {{ $temporada->id }}, {{ $eps->id }})" {{ $eps->assistido? "data-check-{$temporada->id}={$eps->id} checked": '' }} type="checkbox">
                     @csrf
+                    @endauth
                 </li>
                 @endforeach
             </ul>

@@ -30,6 +30,7 @@
 
             <div class="d-flex">
                 <a href="/series/{{$serie->id}}/temporadas" class="btn btn-info btn-sm"><i class="fas fa-external-link-alt"></i></a>
+                @auth
                 <button class="btn btn-info btn-sm ml-2" onclick="toggleInput({{ $serie->id }})">
                     <i class="fas fa-edit"></i>
                 </button>
@@ -38,6 +39,7 @@
                     @method("DELETE")
                     <button class="btn btn-danger btn-sm ml-2"><i class="far fa-trash-alt"></i></button>
                 </form>
+                @endauth
             </div>
         </li>
         @endforeach

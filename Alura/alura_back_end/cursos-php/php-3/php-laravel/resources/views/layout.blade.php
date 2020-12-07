@@ -10,12 +10,26 @@
         li {
             list-style: none;
         }
+
+        .logo {
+            font-size: 1.5rem;
+        }
+
     </style>
     @yield('header')
     <title>@yield('titleDocument')</title>
 
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-2 d-flex justify-content-between">
+        <a class="navbar navbar-expand-lg font-weight-bold logo" href="{{ route('get_series') }}">Home</a>
+        @auth
+            <a href="/sair" class="text-danger">Sair</a>
+        @endauth
+        @guest
+            <a href="/entrar" class="text-danger">Entrar</a>
+        @endguest
+    </nav>
     <div class="container">
         <div class="jumbotron">
             <h1 class="display-4">@yield('title')</h1>

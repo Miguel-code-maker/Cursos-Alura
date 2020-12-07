@@ -17,18 +17,31 @@ Route::get('/laravelinfo', function () {
 
 Route::get('/series', 'SeriesControllers@index')->name('get_series');
 
-Route::get('/series/adicionar', 'SeriesControllers@create')->name('get_criar_series');
+Route::get('/series/adicionar', 'SeriesControllers@create')->name('get_criar_series')->middleware('autenticar');
 
-Route::post('/series/adicionar', 'SeriesControllers@store');
+Route::post('/series/adicionar', 'SeriesControllers@store')->middleware('autenticar');
 
-Route::delete('/series/remover/{id}', 'SeriesControllers@destroy');
+Route::delete('/series/remover/{id}', 'SeriesControllers@destroy')->middleware('autenticar');
 
 Route::get('/series/{serieId}/temporadas', 'TemporadasController@index');
 
-Route::post('/series/{serieId}/editar', 'SeriesControllers@updateName');
+Route::post('/series/{serieId}/editar', 'SeriesControllers@updateName')->middleware('autenticar');
 
-Route::post('/temporadas/{temporada}/assistir', 'EpisodiosController@assistir');
+Route::post('/temporadas/{temporada}/assistir', 'EpisodiosController@assistir')->middleware('autenticar');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/entrar', 'LogarInAppController@index')->name('entrar');
+
+Route::post('/entrar', 'LogarInAppController@login');
+
+Route::get('/registrar', 'RegisterController@index');
+
+Route::post('/registrar', 'RegisterController@store');
+
+Route::get('/sair', function() {
+    \Illuminate\Support\Facades\Auth::logout();
+    return redirect()->route('entrar');
+});
