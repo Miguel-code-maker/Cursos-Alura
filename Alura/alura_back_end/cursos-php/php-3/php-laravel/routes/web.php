@@ -26,3 +26,9 @@ Route::delete('/series/remover/{id}', 'SeriesControllers@destroy');
 Route::get('/series/{serieId}/temporadas', 'TemporadasController@index');
 
 Route::post('/series/{serieId}/editar', 'SeriesControllers@updateName');
+
+Route::post('/temporadas/{temporada}/assistir', 'EpisodiosController@assistir');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

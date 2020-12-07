@@ -11,7 +11,9 @@
             list-style: none;
         }
     </style>
+    @yield('header')
     <title>@yield('titleDocument')</title>
+
 </head>
 <body>
     <div class="container">
