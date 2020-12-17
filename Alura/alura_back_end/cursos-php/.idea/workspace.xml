@@ -1,27 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75452360-023a-419c-bec2-716ba387012a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-3/php-laravel/app/Http/Controllers/LogarInAppController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-3/php-laravel/app/Http/Controllers/RegisterController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-3/php-laravel/app/Http/Middleware/Autenticar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-3/php-laravel/resources/views/errors.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-3/php-laravel/resources/views/login/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-3/php-laravel/resources/views/register/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-3/php-laravel/tests/Feature/CriadorDeSeries.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-3/php-laravel/tests/Unit/TemporadaTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="75452360-023a-419c-bec2-716ba387012a" name="Default Changelist" comment="adicionando login e register na app">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-3/php-laravel/app/Http/Controllers/SeriesControllers.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-3/php-laravel/app/Http/Controllers/SeriesControllers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-3/php-laravel/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-3/php-laravel/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-3/php-laravel/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-3/php-laravel/app/Http/Middleware/Authenticate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-3/php-laravel/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-3/php-laravel/resources/views/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-3/php-laravel/resources/views/series/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-3/php-laravel/resources/views/series/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-3/php-laravel/resources/views/series/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-3/php-laravel/resources/views/series/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-3/php-laravel/resources/views/temporadas/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-3/php-laravel/resources/views/temporadas/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-3/php-laravel/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-3/php-laravel/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-3/php-laravel/tests/Feature/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-3/php-laravel/tests/Feature/ExampleTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../alura_front_end/curso-vuejs/api" beforeDir="false" afterPath="$PROJECT_DIR$/../../alura_front_end/curso-vuejs/api" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +45,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../php" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -190,8 +171,17 @@
       <workItem from="1605111398843" duration="8092000" />
       <workItem from="1605287235311" duration="12491000" />
       <workItem from="1605797747555" duration="22389000" />
-      <workItem from="1607353778990" duration="13550000" />
+      <workItem from="1607353778990" duration="13910000" />
+      <workItem from="1607437016250" duration="84000" />
     </task>
+    <task id="LOCAL-00001" summary="adicionando login e register na app">
+      <created>1607372390553</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607372390553</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,8 +197,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="adicionando login e register na app" />
+    <option name="LAST_COMMIT_MESSAGE" value="adicionando login e register na app" />
   </component>
 </project>
