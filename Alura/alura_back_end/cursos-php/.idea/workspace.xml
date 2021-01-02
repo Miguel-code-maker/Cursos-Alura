@@ -1,24 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75452360-023a-419c-bec2-716ba387012a" name="Default Changelist" comment="adicionando o segundo projeto do curso 3 de laravel">
-      <change afterPath="$PROJECT_DIR$/php-3/php-laravel2/app/Events/NovaSerie.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-3/php-laravel2/app/Listeners/SendEmailNewSerie.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-3/php-laravel2/app/Mail/NovaSerie.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-3/php-laravel2/database/migrations/2020_12_29_142559_create_jobs_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-3/php-laravel2/database/migrations/2020_12_29_142809_create_failed_jobs_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-3/php-laravel2/database/migrations/2020_12_29_185329_adiciona_campo_capa_na_serie.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php-3/php-laravel2/resources/views/mail/serie/novaSerie.blade.php" afterDir="false" />
+    <list default="true" id="75452360-023a-419c-bec2-716ba387012a" name="Default Changelist" comment="finalizando o segundo projeto do curso 3 de laravel">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-3/php-laravel2/app/Http/Controllers/SeriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-3/php-laravel2/app/Http/Controllers/SeriesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-3/php-laravel2/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-3/php-laravel2/app/Providers/EventServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-3/php-laravel2/app/Serie.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-3/php-laravel2/app/Serie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-3/php-laravel2/app/Services/CriadorDeSerie.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-3/php-laravel2/app/Services/CriadorDeSerie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-3/php-laravel2/app/Services/RemovedorDeSerie.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-3/php-laravel2/app/Services/RemovedorDeSerie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-3/php-laravel2/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/php-3/php-laravel2/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-3/php-laravel2/resources/views/series/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-3/php-laravel2/resources/views/series/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-3/php-laravel2/resources/views/series/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-3/php-laravel2/resources/views/series/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php-3/php-laravel2/resources/views/temporadas/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-3/php-laravel2/resources/views/temporadas/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../alura_front_end/curso-vuejs/api" beforeDir="false" afterPath="$PROJECT_DIR$/../../alura_front_end/curso-vuejs/api" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -191,7 +175,7 @@
       <workItem from="1607437016250" duration="84000" />
       <workItem from="1609176616791" duration="6034000" />
       <workItem from="1609188837278" duration="6985000" />
-      <workItem from="1609250321779" duration="16074000" />
+      <workItem from="1609250321779" duration="16303000" />
     </task>
     <task id="LOCAL-00001" summary="adicionando login e register na app">
       <created>1607372390553</created>
@@ -207,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609182708092</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="finalizando o segundo projeto do curso 3 de laravel">
+      <created>1609279336779</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1609279336779</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +220,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="adicionando login e register na app" />
     <MESSAGE value="adicionando o segundo projeto do curso 3 de laravel" />
-    <option name="LAST_COMMIT_MESSAGE" value="adicionando o segundo projeto do curso 3 de laravel" />
+    <MESSAGE value="finalizando o segundo projeto do curso 3 de laravel" />
+    <option name="LAST_COMMIT_MESSAGE" value="finalizando o segundo projeto do curso 3 de laravel" />
   </component>
 </project>
