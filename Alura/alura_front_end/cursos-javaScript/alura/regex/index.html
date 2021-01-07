@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Alura - Expressões regulares</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css"> 
+</head>
+
+<body class="container">
+    
+    <h1 class="text-left">Expressões regulares</h1>
+    
+    <form class="form" >
+        
+        <div class="form-group">
+            <label for="target">Target string (alvo)</label>
+            <input type="text" id="target" class="form-control" value="" autocomplete="off" required autofocus placeholder="Digite um target" />        
+        </div>    
+        
+        <div class="form-group">
+            <label for="pattern">Pattern (expressão regular)</label>
+            <input type="text" id="pattern" class="form-control" value="" autocomplete="off" required  placeholder="Digite um pattern"/>
+        </div>
+
+        <div class="form-group">                
+            <button class="btn btn-primary" onclick="executa(event)">Executar Regex</button>
+        </div>
+
+        <div class="checkbox">
+            <label><input type="checkbox" id="mostraIndex" value="true" />Mostra índice </label>
+            <label></label>
+            <label><input type="checkbox" id="mostraGrupos" value="true" />Mostra grupos </label>
+        </div>
+
+        <div class="form-group">
+            <label for="resultado" id="labelResultados">Matches (resultados)</label>
+            <input type="text" id="resultado" class="form-control" value="" readonly />
+        </div>
+
+        <div class="form-group">
+            <label for="resultado" id="labelHighlight">Highlight</label>
+            <div id="highlightText" style="font-size:30px;"></div>
+        </div>
+        
+    </form>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div class="form-group">
+
+      <textarea class="form-control" rows="5" id="comment"></textarea>
+
+    </div>
+   <br />
+
+    <script src="js/regex.js"></script>
+    </body>
+</html>
+
+<!-- 
+João Fulano,123.456.789-00,21 de Maio de 1993,(21) 3079-9987,Rua do Ouvidor,50,20040-030,Rio de Janeiro
+Maria Fulana, 98765432100,11 de Abril de 1995,(11) 933339871,Rua Vergueiro,3185,04101-300,São Paulo
+denise teste, 987.654.321.00,28 de Dezembro de 1991,(31)45562712,SCS Qd. 8 Bl. B-50,11,70333-900,Rio Grande -->
+<!-- 
+? - zero ou uma vez.
+* - zero ou mais vezes.
++ - uma ou mais vezes.
+{n} - exatamente n vezes.
+{n,} - no mínimo n vezes.
+{n,m} - no mínimo n vezes, no máximo m vezes. -->
+<!-- 
+O primeiro caractere é um espaço branco.
+\t é um tab.
+\r é carriage return.
+\n é newline.
+\f é form feed. 
+\s é todos.
+-->
+<!-- 
+[A-Z] significa de A até Z, sempre maiúscula.
+[a-z] significa de a até z, sempre minúscula,
+[A-Za-z] significa A-Z ou a-z.
+[abc] significa a, b ou c. -->
+<!-- 
+Classe completas ja definidas
+\d todos os digitos [0-9]
+\s todos os tipos de spaços [\t,\r,\n,\f]
+\w Qualquer caracter simples [A-Za-z1-9_] -->
+<!-- 
+\b é uma âncora que seleciona um word boundary, isso é o início ou fim da palavra. ex: "de" algo para o dentisata.
+\B faz o contrario do \b ele so seleciona palarvras que tem outras em voulta dela ex: de algo para o "de"ntista.
+^ é uma âncora que seleciona o início da string alvo.
+$ é uma âncora que seleciona o fim do alvo. -->
+<!-- 
+Declaramos um grupo com ().
+Podemos ter grupos e subgrupos.
+Um grupo é retornado na hora de executar, são úteis para selecionar uma parte do match.
+Através do ?:, dizemos que não queremos ver esse grupo na resposta -->
