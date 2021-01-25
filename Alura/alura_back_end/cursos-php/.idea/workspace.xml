@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75452360-023a-419c-bec2-716ba387012a" name="Default Changelist" comment="finalizando o segundo projeto do curso 3 de laravel">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../alura_front_end/curso-vuejs/api" beforeDir="false" afterPath="$PROJECT_DIR$/../../alura_front_end/curso-vuejs/api" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +44,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Meus-projetinhos/message" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -176,6 +175,7 @@
       <workItem from="1609176616791" duration="6034000" />
       <workItem from="1609188837278" duration="6985000" />
       <workItem from="1609250321779" duration="16303000" />
+      <workItem from="1610573426754" duration="65000" />
     </task>
     <task id="LOCAL-00001" summary="adicionando login e register na app">
       <created>1607372390553</created>
